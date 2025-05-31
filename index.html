@@ -30,6 +30,7 @@
           'modestbranding': 1,
           'controls': 1,
           'rel': 0
+        },
         events: {
           'onStateChange': onPlayerStateChange
         }
@@ -41,6 +42,7 @@
       if (event.data == YT.PlayerState.ENDED) {
         // Zabraň opětovnému přehrání
         player.destroy();
+        // Přesměruj na dotazník nebo jinou stránku
         window.location.href = "https://www.google.com";
       }
     }
